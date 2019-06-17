@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
     s.summary = 'A button with UIActivityIndicatorView.'
     
     s.homepage = 'https://github.com/andrew020/ActivityButton'
+    s.license = { :type => 'MIT', :file => 'Components/LICENSE' }
     s.author = { 'Andrew Leo' => 'andrew2007@foxmail.com' }
     s.source = { :git => 'https://github.com/andrew020/ActivityButton.git', :tag => s.version.to_s }
     s.description = '\
