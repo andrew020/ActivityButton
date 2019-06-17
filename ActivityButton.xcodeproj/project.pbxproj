@@ -15,6 +15,7 @@
 		8E8E7B8522B7402700BB4F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8E7B8322B7402700BB4F9A /* LaunchScreen.storyboard */; };
 		8E8E7B8D22B7407A00BB4F9A /* ActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8E7B8C22B7407A00BB4F9A /* ActivityButton.swift */; };
 		8E8E7B8F22B740CF00BB4F9A /* ActivityButton_Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8E7B8E22B740CF00BB4F9A /* ActivityButton_Reactive.swift */; };
+		8E8E7B9222B77E3600BB4F9A /* ActivityButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E8E7B9122B77E3600BB4F9A /* ActivityButton.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		8E8E7B8622B7402700BB4F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E8E7B8C22B7407A00BB4F9A /* ActivityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityButton.swift; sourceTree = "<group>"; };
 		8E8E7B8E22B740CF00BB4F9A /* ActivityButton_Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityButton_Reactive.swift; sourceTree = "<group>"; };
+		8E8E7B9122B77E3600BB4F9A /* ActivityButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = ActivityButton.podspec; sourceTree = "<group>"; };
 		D576A250FBB5FD87E38C26CC /* Pods-ActivityButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityButton.debug.xcconfig"; path = "Target Support Files/Pods-ActivityButton/Pods-ActivityButton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,8 @@
 		8E8E7B6E22B7402600BB4F9A = {
 			isa = PBXGroup;
 			children = (
+				8E8E7B9122B77E3600BB4F9A /* ActivityButton.podspec */,
+				8E8E7B9022B76EA300BB4F9A /* Components */,
 				8E8E7B7922B7402600BB4F9A /* ActivityButton */,
 				8E8E7B7822B7402600BB4F9A /* Products */,
 				899EF4B4A072D3BEBE6509D9 /* Pods */,
@@ -74,7 +78,6 @@
 		8E8E7B7922B7402600BB4F9A /* ActivityButton */ = {
 			isa = PBXGroup;
 			children = (
-				8E8E7B9022B76EA300BB4F9A /* Components */,
 				8E8E7B7A22B7402600BB4F9A /* AppDelegate.swift */,
 				8E8E7B7C22B7402600BB4F9A /* ViewController.swift */,
 				8E8E7B7E22B7402600BB4F9A /* Main.storyboard */,
@@ -165,6 +168,7 @@
 				8E8E7B8522B7402700BB4F9A /* LaunchScreen.storyboard in Resources */,
 				8E8E7B8222B7402700BB4F9A /* Assets.xcassets in Resources */,
 				8E8E7B8022B7402600BB4F9A /* Main.storyboard in Resources */,
+				8E8E7B9222B77E3600BB4F9A /* ActivityButton.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

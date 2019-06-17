@@ -23,7 +23,7 @@ public class ActivityButton: UIButton {
         view.isUserInteractionEnabled = false
         view.hidesWhenStopped = true
         view.stopAnimating()
-        view.tintColor = activityColor ?? tintColor
+        view.color = activityColor ?? tintColor
         self.addSubview(view)
         return view
     }()

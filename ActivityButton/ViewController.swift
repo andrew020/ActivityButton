@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func start(_ sender: ActivityButton) {
+        sender.activityColor = UIColor.red
         sender.showActivity = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             sender.showActivity = false
