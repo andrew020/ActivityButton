@@ -18,21 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brv-PX-0ra" customClass="ActivityButton" customModule="ActivityButton" customModuleProvider="target">
-                                <rect key="frame" x="85" y="322" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brv-PX-0ra" customClass="ActivityButton" customModule="ActivityButton" customModuleProvider="target">
+                                <rect key="frame" x="20" y="244" width="115" height="30"/>
+                                <state key="normal" title="red activity color"/>
                                 <connections>
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRr-1D-D8x"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-Qe-n7T" customClass="ActivityButton" customModule="ActivityButton" customModuleProvider="target">
+                                <rect key="frame" x="20" y="314" width="138" height="24"/>
+                                <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="-5" maxY="2"/>
+                                <state key="normal" title="activity with tint" image="ic_help_line_grey"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YD8-Ib-ZWg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Brv-PX-0ra" secondAttribute="trailing" symbolic="YES" id="Ake-MY-VUb"/>
+                            <constraint firstItem="pFe-Qe-n7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CGo-Jh-2wp"/>
+                            <constraint firstItem="Brv-PX-0ra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MN6-vQ-1OI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pFe-Qe-n7T" secondAttribute="trailing" symbolic="YES" id="nkm-bV-sAt"/>
+                            <constraint firstItem="Brv-PX-0ra" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="tcx-Tt-iyE"/>
+                            <constraint firstItem="pFe-Qe-n7T" firstAttribute="top" secondItem="Brv-PX-0ra" secondAttribute="bottom" constant="40" id="yfs-Br-x9W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="Brv-PX-0ra" id="R7G-TZ-f92"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_help_line_grey" width="24" height="24"/>
+    </resources>
 </document>
