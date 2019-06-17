@@ -1,15 +1,21 @@
 //
 //  ActivityButton.swift
+//  ActivityButton
 //
-//  Created by 李宗良 on 2019/5/20.
+//  Created by 李宗良 on 2019/6/17.
+//  Copyright © 2019 andrew. All rights reserved.
 //
 
 import UIKit
-import ReactiveSwift
-import ReactiveCocoa
 
+/// A button with UIActivityIndicatorView.
+/// If this button has image, UIActivityIndicatorView will be the same frame with imageView, and hide imageView when UIActivityIndicatorView showing.
+/// If only has text, UIActivityIndicatorView will be the same center with textLabel, and hide imageView when UIActivityIndicatorView showing.
 public class ActivityButton: UIButton {
     
+    var hasImage: Bool = false
+    
+    /// UIActivityIndicatorView default size, it is from system.
     let activityViewDefaultSize: CGFloat = 21
     
     lazy var activityView: UIActivityIndicatorView = {
@@ -22,13 +28,12 @@ public class ActivityButton: UIButton {
         return view
     }()
     
+    /// UIActivityIndicatorView tint color, if this value is nil, the default tint color will be same with button.
     @objc public var activityColor: UIColor? {
         didSet {
             activityView.tintColor = activityColor
         }
     }
-    
-    var hasImage: Bool = false
     
     @objc public var showActivity: Bool = false {
         didSet {
@@ -72,12 +77,5 @@ public class ActivityButton: UIButton {
             return CGRect(x: 0, y: 0, width: 0, height: 0)
         }
         return rect
-    }
-}
-
-
-extension Reactive where Base : ActivityButton {
-    public var showActivity: BindingTarget<Bool> {
-        return makeBindingTarget { $0.showActivity = $1 }
     }
 }
