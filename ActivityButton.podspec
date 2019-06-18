@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
     A button with UIActivityIndicatorView.\
     If this button has image, UIActivityIndicatorView will be the same frame with imageView, and hide imageView when UIActivityIndicatorView showing.\
     If only has text, UIActivityIndicatorView will be the same center with textLabel, and hide imageView when UIActivityIndicatorView showing.\
+    When showActivity is true, button will be disable.\
     '
     
     s.ios.deployment_target = '9.0'
