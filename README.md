@@ -1,6 +1,8 @@
 # ActivityButton
 UIButton with activity view
 
+usage: pod 'ActivityButton'
+
 ![image](https://github.com/andrew020/ActivityButton/blob/master/example.gif)
 
 1.If this button has image, UIActivityIndicatorView will be the same frame with imageView, and hide imageView when UIActivityIndicatorView showing.
